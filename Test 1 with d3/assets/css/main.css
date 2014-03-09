@@ -1,0 +1,33 @@
+/* Main CSS */
+section{
+	float:left;
+}
+#url_input {
+	float:none;
+	clear:both;
+}
+#url_results {
+	height:100px;
+	width:200px;
+	overflow:auto;
+}
+th:before {
+	display:inline-block;
+	content: ' ';
+	position: relative;
+	width: 0;
+	height: 0;
+	line-height:0;
+	border-style:solid;
+	border-color:transparent;
+	border-width:5px 3px;
+}
+th.ascending:before {
+	border-top-color: forestgreen;
+	z-index: 2;
+}
+th.descending:before {
+	border-bottom-color: forestgreen;
+	z-index: 2;
+}
+.dark { background-color:grey; }
